@@ -8,8 +8,7 @@ function rgbToHex(r, g, b) {
 }
 
 $ ( document ).ready(function(){
-  $("#findNumber").click(function() {
-   
+  $("#changeColour").click(function() {
     var no1 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var no2 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var no3 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
