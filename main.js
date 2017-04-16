@@ -12,9 +12,13 @@ $ ( document ).ready(function(){
     var no2 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var no3 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var colour =  /*'"'+*/ "#" + componentToHex(no1) + componentToHex(no2) + componentToHex(no3) /*+ '"'*/;
-    $(body).css("background-color",colour);
+    $('div').each(function() {
+            $(this).css('background',colour);
+        
+        });
     
     console.log(randomNumber);
     $("p").text(randomNumber);
  })
 });
+
