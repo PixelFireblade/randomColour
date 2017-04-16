@@ -1,3 +1,7 @@
+body
+{
+background-color:white;
+}
 html * {
    color: #000;
    font-family: 'Quicksand', sans-serif;
