@@ -3,17 +3,16 @@ function componentToHex(c) {
     return hex.length == 1 ? "0" + hex : hex;
 }
 
-function rgbToHex(r, g, b) {
-    return '"'+ "#" + componentToHex(r) + componentToHex(g) + componentToHex(b) + '"';
-}
+
+
 
 $ ( document ).ready(function(){
   $("#changeColour").click(function() {
     var no1 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var no2 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var no3 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
-    var color = alert( rgbToHex(no1, no2, no3) );
-    document.body.style.backgroundColor = color;
+    var colour =  '"'+ "#" + componentToHex(no1) + componentToHex(no2) + componentToHex(no3) + '"';
+    $(body).css("background-color",colour)
     
     console.log(randomNumber);
     $("p").text(randomNumber);
