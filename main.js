@@ -16,9 +16,11 @@ $ ( document ).ready(function(){
             $(this).css('background',colour);
         
         });
-    
-    console.log(randomNumber);
-    $("p").text(randomNumber);
+    var rgb = no1 + ',' + no2 + ',' + no3;
+    var rgbcode = "rgb(" + rgb + ")";
+    console.log(rgb);
+    document.body.style = "background-color: " + rgbcode + ";";
+    $("p").text(rgbcode);
  })
 });
 
