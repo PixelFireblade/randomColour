@@ -11,10 +11,10 @@ $ ( document ).ready(function(){
     var b = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
     var c = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
    
-    $('div').each(function() {
-            document.body.style.backgroundColor = rgb(a,b,c);
+    
+    $("body").css("background-color","blue");
         
-        });
+
     
  })
 });
