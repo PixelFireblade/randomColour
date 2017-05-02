@@ -12,7 +12,7 @@ $ ( document ).ready(function(){
     var c = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
    
     
-    $("body").css("background-color","blue");
+    $("body").css("background-color",rgb(a,b,c));
         
 
     
