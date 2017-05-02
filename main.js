@@ -1,6 +1,5 @@
-function componentToHex(c) {
-    var hex = c.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;
+function rgb(r,g,b) {
+    return 'rgb(' + [(r||0),(g||0),(b||0)].join(',') + ')';
 }
 
 
@@ -8,17 +7,15 @@ function componentToHex(c) {
 
 $ ( document ).ready(function(){
   $("#changeColour").click(function() {
-    var no1 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
-    var no2 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
-    var no3 = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
-    var colour =  /*'"'+*/ "#" + componentToHex(no1) + componentToHex(no2) + componentToHex(no3) /*+ '"'*/;
+    var a = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
+    var b = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
+    var c = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
+   
     $('div').each(function() {
-            $(this).css('background',colour);
+            document.body.style.backgroundColor = rgb(a,b,c);
         
         });
     
-    console.log(randomNumber);
-    $("p").text(randomNumber);
  })
 });
 
