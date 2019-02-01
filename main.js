@@ -12,7 +12,7 @@ $ ( document ).ready(function(){
    
     
     $("body").css("background-color",rgb(a,b,c));
-    $("#deployColour").append("rgb("+a+","+b+","+c+");");
+    $("#deployColour").html("<p>rgb("+a+","+b+","+c+")</p><br>;");
 
 
         
