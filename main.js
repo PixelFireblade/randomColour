@@ -5,8 +5,8 @@ $ ( document ).ready(function(){
     var c = Math.floor(Math.random() * (255 - 1 + 1)) + 1;
    
     
-    $("body").css("background-color: " + "rgb(+"a+","+b+","+c"+"));");
-    $("#deployColour").append("rgb(+"a+","+b+","+c"+"));");
+    $("body").css("background-color: " + "rgb("+a+","+b+","+c+");");
+    $("#deployColour").append("rgb("+a+","+b+","+c+");");
 
 
         
